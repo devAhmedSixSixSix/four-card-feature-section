@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Poppins", sans-serif;
+  color: hsl(234, 12%, 34%);
+  line-height: 1.7;
+}
+
+body {
+  background-color: #fafafa;
+  padding: 33px;
+}
+
+.container {
+  position: relative;
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+}
+span {
+  font-weight: 200;
+  font-size: 22px;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.text {
+  text-align: center;
+}
+
+.text p {
+  padding-bottom: 11px;
+}
+
+.boxs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .boxs {
+    flex-direction: column;
+  }
+}
+
+.boxs .box {
+  position: relative;
+  height: 222px;
+  width: 370px;
+  padding: 22px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+@media (max-width: 767px) {
+  .boxs .box {
+    width: 260px;
+  }
+}
+
+.supervisor,
+.team-builder,
+.karma,
+.calculator {
+  background-color: #fff;
+  margin: 20px 10px;
+}
+
+.supervisor {
+  border-top: solid 3px hsl(180, 62%, 55%);
+}
+
+.team-builder {
+  border-top: solid 3px hsl(0, 78%, 62%);
+}
+
+.karma {
+  border-top: solid 3px hsl(34, 97%, 64%);
+}
+
+.calculator {
+  border-top: solid 3px hsl(212, 86%, 64%);
+}
+
+.boxs .box img {
+  display: block;
+  position: absolute;
+  bottom: 22px;
+  right: 22px;
+}
